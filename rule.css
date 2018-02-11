@@ -1,0 +1,59 @@
+/* basic */
+body{ margin:0; padding:0;border:none; font-size:16px;font-family:"宋体";}
+div{ text-align:left;}
+li { list-style-type:none;}
+
+/* header */
+.header{
+	width:90%;
+	margin:0 auto;
+	height:100px;
+	background: -webkit-linear-gradient(#9393FF,#4A4AFF,#9393FF,#B9B9FF,#DDDDFF); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient(#9393FF,#4A4AFF,#9393FF,#B9B9FF,#DDDDFF); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient(#9393FF,#4A4AFF,#9393FF,#B9B9FF,#DDDDFF); /* Firefox 3.6 - 15 */
+	background: linear-gradient(#9393FF,#4A4AFF,#9393FF,#B9B9FF,#DDDDFF); /* 标准语法 */}
+h3{ text-align:center; font-size:24px; margin:auto 0;padding:10px 0 0 0;}
+.remark{ color:red;}
+.remark2{ color:blue;}
+.remark3{ color:green;}
+
+/* main */
+.main{ width:90%; margin:0 auto; background:#E0E0E0;}
+.main_title{ text-align:center;font-size:20px;line-height:30px;}
+.textarea{ width:100%; height:100%;margin:0; border-style:none;padding:0; overflow:auto; word-break:break-all;}
+
+#pre_door{ width:90%; margin:0 auto;border:1px solid #ADADAD; padding:0; height:40px; background-color:#ccc;text-align:center; font-size:20px;line-height:40px;font-weight:bold;}
+.pre{ width:90%; margin:0 auto; border:1px solid #ADADAD; height:160px; display:none;}
+#pre_title{ width:5%; margin:0; height:160px; background-color:#FFFFCE; float:left;}
+#pre_textarea{ width:65%; margin:0; height:160px; background-color:#2894FF; float:left;}
+#pre_text{ width:100%; margin:0; height:160px; background-color:#fff;border-radius:10px; text-align:left;}
+#pre_button{ width:30%; margin:0; height:160px; background-color:#d0d0d0; float:left;}
+/* .pre_button_span{ background-color : #D9FFFF; color : black; border : 1px solid black;} */
+.pre_choose{ width:20%; display:inline-block;background-color:#D9FFFF;color:black;}
+
+.before{ width:90%; margin:0 auto; border:1px solid #ADADAD; height:400px;}
+#before_title{ width:5%; padding:80px 0; height:240px; background-color:#DEFFAC; float:left;}
+#before_textarea{ width:65%; margin:0; float:left; background-color:#2894FF}
+#before_text{ width:100%; margin:0; height:160px; background-color:#fff;border-radius: 10px; text-align:left;}
+#before_choose{ width:100%; margin:0; height:240px; background-color:#97CBFF; float:left;}
+#before_button{ width:30%; margin:0;padding:30px 0; height:340px; background-color:#d0d0d0; float:left;text-align:center;}
+
+
+.after{ width:90%; margin:0 auto; border:1px solid #ADADAD; height:160px;}
+#after_title{ width:5%; padding:5px 0; height:150px; background-color:#DEFFAC; float:left;}
+#after_textarea{ width:65%; margin:0; height:160px; background-color:#2894FF; float:left;}
+#after_text{ width:100%; margin:0; height:160px; background-color:#fff;border-radius: 10px; text-align:left;color:black;}
+#after_button{ width:30%; margin:0; height:160px; background-color:#d0d0d0; float:left;text-align:center;}
+
+/* footer */
+.footer{
+	width:90%;
+	margin:0 auto;
+	border:none;
+	padding:0;
+	height:50px;
+	background: -webkit-linear-gradient( #DDDDFF,#0000E3); /* Safari 5.1 - 6.0 */
+	background: -o-linear-gradient( #DDDDFF,#0000E3); /* Opera 11.1 - 12.0 */
+	background: -moz-linear-gradient( #DDDDFF,#0000E3); /* Firefox 3.6 - 15 */
+	background: linear-gradient( #DDDDFF,#0000E3); /* 标准语法 */
+	text-align:center;}

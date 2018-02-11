@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>投资者活动关系_排版</title>
+<link rel="stylesheet" type="text/css" href="rule.css"/>
+<script type="text/javascript" src="rule.js"></script>
+<meta charset="utf-8"/>
+</head>
+<body>
+<div class="header">
+<h3>投资者关系活动排版工具</h3>
+<p class="remark">&nbsp;&nbsp;&nbsp;&nbsp;支持中文及以下几类特殊字符:空格，·，、,/,中英文状态下的冒号，分号，圆弧号,连接符
+<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;带有英文及数字的请先在预排版区处理
+</p>
+</div>
+<div class="main">
+	<div id="pre_door" onclick="AddPreDoor()">
+		打开预处理区
+	</div>
+	<div class="pre" id="pre">		
+		<div id="pre_title">
+			<p class="main_title">预<br/>处<br/>理<br/>区</p>
+		</div>
+		<div id="pre_textarea">
+			<textarea name="pre_text" id="pre_text" class="textarea">		
+			</textarea>
+		</div>
+		<div id="pre_button">
+			<ul>
+				<li>
+					<p class="remark">如需替换，请填写替换模式</p>
+				</li>
+				<li>
+					<input type="text" class="pre_choose" id="pre_button_before">
+					<span>替换为</span>
+					<input type="text" class="pre_choose" id="pre_button_after">
+				</li>
+				<li>
+					<button type="button" onclick="PreExchange()">点此替换</button>
+				</li>
+				<li>
+					<button type="button" onclick="PreNext()">下一步</button>
+				</li>
+				<li>
+					<button type="button" onclick="CleanPre()">清空预处理区</button>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="before">
+		<div id="before_title">
+			<p class="main_title">原<br/>样<br/>式<br/>区</p>
+		</div>
+		<div id="before_textarea">
+			<form action="#" method="POST" name="rule" accept-charset="utf-8">
+				<textarea name="before_text" id="before_text" class="textarea">		
+				</textarea>
+				<div id="before_choose">
+					<ul>
+						<li>请选择初始排版格式</li>
+						<li><input type = "radio" name="rule_radio" value="1"><span class="remark2">投资者:</span>&nbsp;<span>人名 机构/人名 人名 机构</span></li>
+						<li><input type = "radio" name="rule_radio" value="2"><span class="remark2">投资者:</span>&nbsp;<span>机构：人名/机构：人名 人名</span></li>
+						<li><input type = "radio" name="rule_radio" value="3"  checked="true" id="rule_radio3">
+						<span class="remark2">投资者:</span>&nbsp;<span>机构 人名 人名/机构 人名、人名</span>
+						<br/>
+						<span class="remark3">&nbsp;&nbsp;接待者:</span>&nbsp;<span>职称、职称：人名/职称：人名</span>
+						</li>
+						<li><input type = "radio" name="rule_radio" value="4"><span class="remark3">接待者</span>&nbsp;<span>人名（职称、职称）/人名（职称）</span>
+						</li>
+						<li><input type = "radio" name="rule_radio" value="5"><span class="remark3">接待者</span>&nbsp;<span>职务 人名/职务 人名(此项只处理一人一职类型)</span></li>
+					</ul>
+				</div>
+			</form>
+		</div>		
+		<div id="before_button">
+			<button type="button" onclick="Exchange()">点此排版</button>
+			<br/><br/>
+			<button type="button" onclick="CleanBefore()">清空原样式区</button>
+		</div>
+	</div>
+	<div class="after">
+		<div id="after_title">
+			<p class="main_title">新<br/>样<br/>式<br/>区</p>
+		</div>
+		<div id="after_textarea">
+			<textarea name="after_text" id="after_text" class="textarea">		
+			</textarea>
+		</div>		
+		<div id="after_button">
+			<button type="button" onclick="CleanAll()">一键清空</button>
+		</div>
+	</div>	
+</div>
+<div class="footer">
+	Version:1.1<br/>L.C.Time:2018.1.11
+</div>
+</body>
+</html>
